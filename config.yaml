@@ -1,0 +1,21 @@
+ad_library:
+  q: "microlearning"
+  country: "US"
+  active_status: "all"
+  ad_type: "all"
+  media_type: "all"
+  search_type: "keyword_exact_phrase"
+
+scraper:
+  headless: true
+  max_ads: 1500
+  max_scroll_tries: 10
+  scroll_timeout_ms: 3000
+  batch_size: 20
+
+paths:
+  output_file: "us_microlearning_ads.jsonl"
+  quarantine_dir: "data/quarantine"
+  parsed_ads_dir: "data/parsed"
+  transformed_ads_dir: "data/transformed"
+  analysis_output: "data/analysis/top_100_us_microlearning_ads.jsonl"
